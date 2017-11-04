@@ -1,0 +1,132 @@
+/* .container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+} */
+
+.header {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: lightskyblue;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+}
+
+
+/*=============================================
+=            For Desktop                      =
+=============================================*/
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: calc(100% * 1 / 12);
+}
+
+.col-2 {
+    width: calc(100% * 2 / 12);
+}
+
+.col-3 {
+    width: calc(100% * 3 / 12);
+}
+
+.col-4 {
+    width: calc(100% * 4 / 12);
+}
+
+.col-5 {
+    width: calc(100% * 5 / 12);
+}
+
+.col-6 {
+    width: calc(100% * 6 / 12);
+}
+
+.col-7 {
+    width: calc(100% * 7 / 12);
+}
+
+.col-8 {
+    width: calc(100% * 8 / 12);
+}
+
+.col-9 {
+    width: calc(100% * 9 / 12);
+}
+
+.col-10 {
+    width: calc(100% * 10 / 12);
+}
+
+.col-11 {
+    width: calc(100% * 11 / 12);
+}
+
+.col-12 {
+    width: calc(100% * 12 / 12);
+}
+
+
+/*=====  End of For Desktop            ======*/
+
+
+/*=============================================
+=            For Mobile                       =
+=============================================*/
+
+@media only screen and (max-width:768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+/*=====  End of For Mobile             ======*/
